@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+    <input type="hidden" id="membre__token" name="membre[_token]" value="a0097532786819e0e57ee10e068446._VeXmxo3makdvLIBR0yCvNJEwd4goxUxgnL6h0V1QCQ.q2Lg9WhSweRljfNKLj3hzeoHru1XkXdfsV-75nMmEUm8LeTKd0Hy4EWP-w" /></form>
+
+    
+{{form_start(registrationForm, {
+    attr: {
+        novalidate: 'novalidate'
+    }
+})}}
+
+
+{{ form_row(registrationForm.pseudo) }}
+{{ form_row(registrationForm.plainPassword) }}
+{{ form_row(registrationForm.lastname)}}
+{{ form_row(registrationForm.name) }}
+{{ form_row(registrationForm.email)}}
+{{ form_row(registrationForm.civilite)}}
+ 
+
+
+
+
+<button type="submit" class="btn btn-primary mt-2">
+Register
+</button>
+{{form_end(registrationForm)}}
+ 
+{% endblock %}

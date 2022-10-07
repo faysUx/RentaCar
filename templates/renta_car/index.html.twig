@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RentaCarController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Welcome to RentaCar!</h1>
+
+
+<div class="card border-primary mb-3" style="max-width: 37rem;">
+  <div class="card-header">RentaCar</div>
+  <div class="card-body">
+ 
+    <h3 text center class="card-title">Select your Car</h3>
+     <td><img src="https://s03.s3c.es/imag/_v0/770x420/6/5/a/490x_coches-fondo-blanco-dreamstime.jpg" style="width:550px;" alt="550px"></td>
+    <h3 class="card-text">A wide range of vehicles at your disposal at an extraordinary price, compare it!</h3>
+  </div>
+</div>
+ <ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="{{ path('liste') }}  ">Select your Car</a>
+  </li>
+
+
+{% endblock %}
